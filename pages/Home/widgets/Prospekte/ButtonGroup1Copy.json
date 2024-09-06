@@ -1,85 +1,63 @@
 {
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
-  "boxShadow": "none",
-  "buttonVariant": "PRIMARY",
-  "childStylesheet": {
-    "button": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    }
-  },
-  "displayName": "Button Group",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "groupButtons.groupButton2.buttonColor"
-    },
-    {
-      "key": "groupButtons.groupButton2.isDisabled"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "groupButtons.groupButton2.isDisabled"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "groupButtons.groupButton2.onClick"
-    }
-  ],
-  "groupButtons": {
-    "groupButton2": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "buttonType": "SIMPLE",
-      "iconName": "phone",
-      "id": "groupButton2",
-      "index": 0,
-      "isDisabled": "{{recieved.selectedRow.id === \"\" || select_formsdata.data.length === 0}}",
-      "isVisible": true,
-      "label": "Bearbeiten",
-      "menuItems": {},
-      "onClick": "{{storeValue('currentCustomer', callback_customers.selectedRow).then(() => {\n  navigateTo('Bearbeitung', {}, 'SAME_WINDOW');\n});}}",
-      "placement": "CENTER",
-      "widgetId": ""
-    }
-  },
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-  "isCanvas": false,
-  "isDeprecated": false,
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
-  "key": "ny4wecpos3",
-  "leftColumn": 0,
-  "minWidth": 450,
-  "mobileBottomRow": 118,
-  "mobileLeftColumn": 28,
-  "mobileRightColumn": 52,
-  "mobileTopRow": 114,
-  "orientation": "horizontal",
-  "originalBottomRow": 118,
-  "originalTopRow": 114,
-  "parentColumnSpace": 19.09375,
-  "parentId": "46jiakkulg",
-  "parentRowSpace": 10,
-  "renderMode": "CANVAS",
-  "responsiveBehavior": "fill",
-  "rightColumn": 12,
-  "searchTags": [
-    "click",
-    "submit"
-  ],
-  "tags": [
-    "Buttons"
-  ],
-  "topRow": 4,
-  "type": "BUTTON_GROUP_WIDGET",
-  "version": 1,
-  "widgetId": "99qigtg7hd",
-  "widgetName": "ButtonGroup1Copy"
+    "boxShadow": "none",
+    "mobileBottomRow": 118,
+    "widgetName": "ButtonGroup1Copy",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [{"key": "groupButtons.groupButton2.isDisabled"}],
+    "displayName": "Button Group",
+    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 4,
+    "bottomRow": 8,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {"groupButton2": {
+        "onClick": "{{storeValue('currentCustomer', callback_customers.selectedRow).then(() => {\n  navigateTo('Bearbeitung', {}, 'SAME_WINDOW');\n});}}",
+        "buttonType": "SIMPLE",
+        "iconName": "phone",
+        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+        "widgetId": "",
+        "menuItems": {},
+        "index": 0,
+        "label": "Bearbeiten",
+        "id": "groupButton2",
+        "placement": "CENTER",
+        "isVisible": true,
+        "isDisabled": "{{recieved.selectedRow.id === \"\" || select_formsdata.data.length === 0}}"
+    }},
+    "hideCard": false,
+    "mobileRightColumn": 52,
+    "animateLoading": true,
+    "parentColumnSpace": 19.09375,
+    "dynamicTriggerPathList": [{"key": "groupButtons.groupButton2.onClick"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "groupButtons.groupButton2.buttonColor"},
+        {"key": "groupButtons.groupButton2.isDisabled"}
+    ],
+    "isDisabled": false,
+    "key": "ny4wecpos3",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 12,
+    "widgetId": "99qigtg7hd",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "46jiakkulg",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 114,
+    "responsiveBehavior": "fill",
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 114,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 28,
+    "originalBottomRow": 118,
+    "buttonVariant": "PRIMARY"
 }

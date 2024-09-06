@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65d89894ae61d1579941740a",
-  "id": "Angebot_ProductEvaluator",
   "unpublishedCollection": {
     "name": "ProductEvaluator",
     "pageId": "Angebot",
     "pluginId": "js-plugin",
     "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
     "variables": [
       {
         "name": "model",
@@ -19,6 +19,10 @@
         "name": "partner",
         "value": "null"
       }
-    ]
-  }
+    ],
+    "userPermissions": []
+  },
+  "id": "Angebot_ProductEvaluator",
+  "deleted": false,
+  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65d89894ae61d1579941740a"
 }

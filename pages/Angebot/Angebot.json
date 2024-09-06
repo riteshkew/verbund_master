@@ -1,32 +1,83 @@
 {
-  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65d34b016119bb3cbb63e43c",
   "unpublishedPage": {
-    "isHidden": false,
+    "name": "Angebot",
+    "slug": "angebot",
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 2900,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "minHeight": 1190,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 117,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
+          "detachFromLayout": true,
           "widgetId": "0",
-          "widgetName": "MainContainer"
-        }
+          "topRow": 0,
+          "bottomRow": 2900,
+          "containerStyle": "none",
+          "snapRows": 117,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1190,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Angebot_getPartner",
+              "name": "getPartner",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentCustomer.PLZ"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Angebot_HTML_Evaluator.evaluateTemplate",
+              "name": "HTML_Evaluator.evaluateTemplate",
+              "collectionId": "Angebot_HTML_Evaluator",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  if (getPartner.data.length === 0) {\n    return HTML_Evaluator.template = HTML_Evaluator.templates.NO_PARTNER;\n  }\n  if (appsmith.store.currentCustomer.Anspruch === \"J\") {\n    if (appsmith.store.currentCustomer.WarmwasserspeicherMitWaermepumpeIntegriert === \"N\") {\n      return HTML_Evaluator.template = HTML_Evaluator.templates.WITH_WS;\n    }\n    return HTML_Evaluator.template = HTML_Evaluator.templates.WP_ONLY;\n  }\n  return HTML_Evaluator.template = HTML_Evaluator.templates.NOT_ELIGIBLE;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Angebot_ProductEvaluator.getData",
+              "name": "ProductEvaluator.getData",
+              "collectionId": "Angebot_ProductEvaluator",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  ProductEvaluator.evaluateProducts();\n  let partner = await getPartner.run();\n  if (partner.length !== 0) {\n    ProductEvaluator.partner = await partner[0].Partner;\n    await get_WP_data.run();\n    await get_WS_data.run();\n    return;\n  }\n  ProductEvaluator.partner = partner;\n  return;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Angebot",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "Angebot",
-    "slug": "angebot"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65d34b016119bb3cbb63e43c"
 }

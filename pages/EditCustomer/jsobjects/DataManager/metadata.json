@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "65f069af55005203af9cac2d_65f16d5855005203af9cb122",
-  "id": "EditCustomer_DataManager",
   "unpublishedCollection": {
     "name": "DataManager",
     "pageId": "EditCustomer",
     "pluginId": "js-plugin",
     "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,6 +15,10 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ]
-  }
+    ],
+    "userPermissions": []
+  },
+  "id": "EditCustomer_DataManager",
+  "deleted": false,
+  "gitSyncId": "65f069af55005203af9cac2d_65f16d5855005203af9cb122"
 }

@@ -1,135 +1,107 @@
 {
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
-  "boxShadow": "none",
-  "buttonVariant": "PRIMARY",
-  "childStylesheet": {
-    "button": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    }
-  },
-  "displayName": "Button Group",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
+    "boxShadow": "none",
+    "mobileBottomRow": 9,
+    "widgetName": "edit_btn_group",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [
+        {"key": "groupButtons.groupButton2.isDisabled"},
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButtonparvntihj1.onClick"},
+        {"key": "groupButtons.groupButtonparvntihj1.isDisabled"}
+    ],
+    "displayName": "Button Group",
+    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 6,
+    "bottomRow": 11,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButtonparvntihj1": {
+            "itemType": "BUTTON",
+            "onClick": "{{showModal('Modal3');}}",
+            "buttonColor": "#b91c1c",
+            "iconName": "trash",
+            "widgetId": "201x6fjg16",
+            "menuItems": {},
+            "index": 2,
+            "label": "Löschen",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "iconAlign": "left",
+            "id": "groupButtonparvntihj1",
+            "isDisabled": "{{all_data.selectedRow.id === \"\"}}",
+            "placement": "CENTER"
+        },
+        "groupButtongo44us0ywc": {
+            "itemType": "BUTTON",
+            "onClick": "{{getPartner.run().then(() => {\n  showModal(Modal5.name);\n}).catch(() => {\n  showAlert('Kein Partner Vefügbar für PLZ ' + all_data.selectedRow.PLZ, 'error');\n});}}",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "iconName": "person",
+            "widgetId": "zrf77hquep",
+            "menuItems": {},
+            "index": 0,
+            "label": "Partner Aktulisieren",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "buttonVariant": "filled",
+            "id": "groupButtongo44us0ywc",
+            "isDisabled": false,
+            "placement": "CENTER",
+            "isSeparator": false
+        },
+        "groupButton2": {
+            "onClick": "{{storeValue('currentCustomer', all_data.selectedRow).then(() => {\n  navigateTo('EditCustomer', {}, 'SAME_WINDOW');\n});}}",
+            "buttonType": "SIMPLE",
+            "iconName": "edit",
+            "buttonColor": "#eab308",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 1,
+            "label": "Editieren",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": "{{all_data.selectedRow.anPartnerGesendetAm !== null}}"
+        }
     },
-    {
-      "key": "groupButtons.groupButton2.isDisabled"
-    },
-    {
-      "key": "groupButtons.groupButtonparvntihj1.isDisabled"
-    },
-    {
-      "key": "groupButtons.groupButtongo44us0ywc.buttonColor"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "groupButtons.groupButton2.isDisabled"
-    },
-    {
-      "key": "groupButtons.groupButton2.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtonparvntihj1.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtonparvntihj1.isDisabled"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "groupButtons.groupButton2.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtonparvntihj1.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtongo44us0ywc.onClick"
-    }
-  ],
-  "groupButtons": {
-    "groupButton2": {
-      "buttonColor": "#eab308",
-      "buttonType": "SIMPLE",
-      "iconName": "edit",
-      "id": "groupButton2",
-      "index": 1,
-      "isDisabled": "{{all_data.selectedRow.anPartnerGesendetAm !== null}}",
-      "isVisible": true,
-      "label": "Editieren",
-      "menuItems": {},
-      "onClick": "{{storeValue('currentCustomer', all_data.selectedRow).then(() => {\n  navigateTo('EditCustomer', {}, 'SAME_WINDOW');\n});}}",
-      "placement": "CENTER",
-      "widgetId": ""
-    },
-    "groupButtongo44us0ywc": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "buttonType": "SIMPLE",
-      "buttonVariant": "filled",
-      "iconName": "person",
-      "id": "groupButtongo44us0ywc",
-      "index": 0,
-      "isDisabled": false,
-      "isSeparator": false,
-      "isVisible": true,
-      "itemType": "BUTTON",
-      "label": "Partner Aktulisieren",
-      "menuItems": {},
-      "onClick": "{{getPartner.run().then(() => {\n  showModal(Modal5.name);\n}).catch(() => {\n  showAlert('Kein Partner Vefügbar für PLZ ' + all_data.selectedRow.PLZ, 'error');\n});}}",
-      "placement": "CENTER",
-      "widgetId": "zrf77hquep"
-    },
-    "groupButtonparvntihj1": {
-      "buttonColor": "#b91c1c",
-      "buttonType": "SIMPLE",
-      "iconAlign": "left",
-      "iconName": "trash",
-      "id": "groupButtonparvntihj1",
-      "index": 2,
-      "isDisabled": "{{all_data.selectedRow.id === \"\"}}",
-      "isVisible": true,
-      "itemType": "BUTTON",
-      "label": "Löschen",
-      "menuItems": {},
-      "onClick": "{{showModal('Modal3');}}",
-      "placement": "CENTER",
-      "widgetId": "201x6fjg16"
-    }
-  },
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-  "isCanvas": false,
-  "isDeprecated": false,
-  "isLoading": false,
-  "isVisible": true,
-  "key": "alxieo6r6y",
-  "leftColumn": 43,
-  "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 54,
-  "mobileTopRow": 5,
-  "orientation": "horizontal",
-  "originalBottomRow": 10,
-  "originalTopRow": 5,
-  "parentColumnSpace": 33.21875,
-  "parentId": "sirbr29l7j",
-  "parentRowSpace": 10,
-  "renderMode": "CANVAS",
-  "responsiveBehavior": "fill",
-  "rightColumn": 64,
-  "searchTags": [
-    "click",
-    "submit"
-  ],
-  "tags": [
-    "Buttons"
-  ],
-  "topRow": 2,
-  "type": "BUTTON_GROUP_WIDGET",
-  "version": 1,
-  "widgetId": "v7c01ot6lw",
-  "widgetName": "edit_btn_group"
+    "hideCard": false,
+    "mobileRightColumn": 54,
+    "animateLoading": true,
+    "parentColumnSpace": 33.21875,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButtonparvntihj1.onClick"},
+        {"key": "groupButtons.groupButtongo44us0ywc.onClick"}
+    ],
+    "leftColumn": 42,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "groupButtons.groupButton2.isDisabled"},
+        {"key": "groupButtons.groupButtonparvntihj1.isDisabled"},
+        {"key": "groupButtons.groupButtongo44us0ywc.buttonColor"}
+    ],
+    "key": "alxieo6r6y",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "v7c01ot6lw",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "sirbr29l7j",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 5,
+    "responsiveBehavior": "fill",
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 5,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 30,
+    "originalBottomRow": 10,
+    "buttonVariant": "PRIMARY"
 }

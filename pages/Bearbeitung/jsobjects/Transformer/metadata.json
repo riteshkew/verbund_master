@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65d4be1dae61d15799413108",
-  "id": "Bearbeitung_Transformer",
   "unpublishedCollection": {
     "name": "Transformer",
     "pageId": "Bearbeitung",
     "pluginId": "js-plugin",
     "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
     "variables": [
       {
         "name": "processedData",
@@ -15,6 +15,10 @@
         "name": "transformedData",
         "value": "null"
       }
-    ]
-  }
+    ],
+    "userPermissions": []
+  },
+  "id": "Bearbeitung_Transformer",
+  "deleted": false,
+  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65d4be1dae61d15799413108"
 }

@@ -1,33 +1,82 @@
 {
-  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65ce39d36119bb3cbb63e2b5",
   "unpublishedPage": {
-    "isHidden": false,
+    "name": "Bearbeitung",
+    "slug": "bearbeitung",
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 5480,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
-          "leftColumn": 0,
-          "minHeight": 1292,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 4896,
           "snapColumns": 64,
-          "snapRows": 124,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
+          "detachFromLayout": true,
           "widgetId": "0",
-          "widgetName": "MainContainer"
-        }
+          "topRow": 0,
+          "bottomRow": 5480,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Bearbeitung_getPartner",
+              "name": "getPartner",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentCustomer.Postleitzahl !== undefined ? appsmith.store.currentCustomer.Postleitzahl : appsmith.store.currentCustomer.PLZ"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Bearbeitung_CustomerExist",
+              "name": "CustomerExist",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentCustomer.id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Bearbeitung_EligibilityChecker.checkPLZ",
+              "name": "EligibilityChecker.checkPLZ",
+              "collectionId": "Bearbeitung_EligibilityChecker",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  let rejectionReason = `Keinen Partner für ${appsmith.store.currentCustomer.PLZ !== undefined ? appsmith.store.currentCustomer.PLZ : appsmith.store.currentCustomer.Postleitzahl}`;\n  if (getPartner.data.length === 0) {\n    EligibilityChecker.addRejectionReason(rejectionReason);\n    showAlert(`Kunde ist nicht geeignet: ${rejectionReason}`, \"error\");\n    return false;\n  }\n  return true;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Bearbeitung",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "Bearbeitung",
-    "slug": "bearbeitung"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65ce39d36119bb3cbb63e2b5"
 }

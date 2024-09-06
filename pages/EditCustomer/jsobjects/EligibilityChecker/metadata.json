@@ -1,16 +1,20 @@
 {
-  "gitSyncId": "65f069af55005203af9cac2d_65f1815355005203af9cb4c0",
-  "id": "EditCustomer_EligibilityChecker",
   "unpublishedCollection": {
     "name": "EligibilityChecker",
     "pageId": "EditCustomer",
     "pluginId": "js-plugin",
     "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
     "variables": [
       {
         "name": "rejectionReasons",
         "value": "[]"
       }
-    ]
-  }
+    ],
+    "userPermissions": []
+  },
+  "id": "EditCustomer_EligibilityChecker",
+  "deleted": false,
+  "gitSyncId": "65f069af55005203af9cac2d_65f1815355005203af9cb4c0"
 }

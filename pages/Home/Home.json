@@ -1,33 +1,115 @@
 {
-  "gitSyncId": "65b284b4cdc1db10be34d0be_65b284b5cdc1db10be34d0c1",
   "unpublishedPage": {
-    "isHidden": false,
+    "name": "Home",
+    "slug": "home",
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 1060,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
-          "leftColumn": 0,
-          "minHeight": 1292,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 4896,
           "snapColumns": 64,
-          "snapRows": 124,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
+          "detachFromLayout": true,
           "widgetId": "0",
-          "widgetName": "MainContainer"
-        }
+          "topRow": 0,
+          "bottomRow": 1060,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_getAllProspects",
+              "name": "getAllProspects",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getContactedProspects",
+              "name": "getContactedProspects",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getProspectForPartners",
+              "name": "getProspectForPartners",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getProspectsAbgeschlossen",
+              "name": "getProspectsAbgeschlossen",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getProspectsAngenommen",
+              "name": "getProspectsAngenommen",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_getProspectsCallback",
+              "name": "getProspectsCallback",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_select_formsdata",
+              "name": "select_formsdata",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_getPartner",
+              "name": "getPartner",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "all_data.selectedRow.PLZ"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Home",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "Home",
-    "slug": "home"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65b284b4cdc1db10be34d0be_65b284b5cdc1db10be34d0c1"
 }

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "669640eee8cf2a4090812d90_bc1464e4-5d25-4d77-bcc2-53d126d7100e",
-  "id": "Bearbeitung_EmailSender",
   "unpublishedCollection": {
     "name": "EmailSender",
     "pageId": "Bearbeitung",
     "pluginId": "js-plugin",
     "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,6 +15,10 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ]
-  }
+    ],
+    "userPermissions": []
+  },
+  "id": "Bearbeitung_EmailSender",
+  "deleted": false,
+  "gitSyncId": "669640eee8cf2a4090812d90_bc1464e4-5d25-4d77-bcc2-53d126d7100e"
 }

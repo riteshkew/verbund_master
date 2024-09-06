@@ -1,32 +1,56 @@
 {
-  "gitSyncId": "65f069af55005203af9cac2d_65f06b4555005203af9caccf",
   "unpublishedPage": {
-    "isHidden": false,
+    "name": "EditCustomer",
+    "slug": "editcustomer",
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 1160,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "minHeight": 700,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 68,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
+          "detachFromLayout": true,
           "widgetId": "0",
-          "widgetName": "MainContainer"
-        }
+          "topRow": 0,
+          "bottomRow": 1160,
+          "containerStyle": "none",
+          "snapRows": 68,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 700,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "EditCustomer_getCustomer",
+              "name": "getCustomer",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentCustomer.id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "EditCustomer",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "EditCustomer",
-    "slug": "editcustomer"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65f069af55005203af9cac2d_65f06b4555005203af9caccf"
 }

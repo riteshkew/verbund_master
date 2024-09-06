@@ -1,32 +1,93 @@
 {
-  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65e09622ae61d157994180a8",
   "unpublishedPage": {
-    "isHidden": false,
+    "name": "Partner",
+    "slug": "partner",
     "layouts": [
       {
+        "viewMode": false,
         "dsl": {
+          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "bottomRow": 980,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "minHeight": 1190,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 117,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 90,
+          "detachFromLayout": true,
           "widgetId": "0",
-          "widgetName": "MainContainer"
-        }
+          "topRow": 0,
+          "bottomRow": 980,
+          "containerStyle": "none",
+          "snapRows": 117,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1190,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Partner_getPartner",
+              "name": "getPartner",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.currentCustomer.PLZ"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Partner_ProductEvaluator.getData",
+              "name": "ProductEvaluator.getData",
+              "collectionId": "Partner_ProductEvaluator",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  ProductEvaluator.evaluateProducts();\n  let partner = await getPartner.run();\n  ProductEvaluator.partner = partner[0].Partner;\n  await get_WP_data.run();\n  await get_WS_data.run();\n  EmailEvaluator.evaluateEmail();\n  return;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Partner_get_WS_data",
+              "name": "get_WS_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "getPartner.data[0].Partner",
+                "ProductEvaluator.waterModel"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Partner_get_WP_data",
+              "name": "get_WP_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "getPartner.data[0].Partner",
+                "ProductEvaluator.model"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Partner",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
       }
     ],
-    "name": "Partner",
-    "slug": "partner"
-  }
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65b8cca6cdc1db10be34d1a2_65e09622ae61d157994180a8"
 }

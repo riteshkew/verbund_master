@@ -1,74 +1,58 @@
 {
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
-  "bottomRowBeforeCollapse": 15,
-  "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
-  "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "hideCard": false,
-  "iconAlign": "left",
-  "iconName": "saved",
-  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-  "isDefaultClickDisabled": true,
-  "isDeprecated": false,
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": "{{EligibilityChecker.rejectionReasons.length !== 0}}",
-  "key": "594f29jphk",
-  "leftColumn": 47,
-  "minWidth": 120,
-  "mobileBottomRow": 16,
-  "mobileLeftColumn": 44,
-  "mobileRightColumn": 60,
-  "mobileTopRow": 12,
-  "onClick": "{{Transformer.saveData();\nInsertCustomer.run().then(() => {\n  updateContactFormData.run().then(() => {\n    navigateTo('Home', {}, 'SAME_WINDOW');\n  });\n  showAlert('Daten Erfolgreich gespeichert.', 'success');\n}).catch(() => {\n  showAlert('Fehler mit Speicherung.', 'error');\n});}}",
-  "originalBottomRow": 10,
-  "originalTopRow": 6,
-  "parentColumnSpace": 29.109375,
-  "parentId": "sl008sjkbd",
-  "parentRowSpace": 10,
-  "placement": "BETWEEN",
-  "recaptchaType": "V3",
-  "renderMode": "CANVAS",
-  "resetFormOnClick": false,
-  "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "searchTags": [
-    "click",
-    "submit"
-  ],
-  "tags": [
-    "Buttons"
-  ],
-  "text": "Speichern und beenden",
-  "topRow": 5,
-  "topRowBeforeCollapse": 11,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
-  "widgetId": "ui07dnee7m",
-  "widgetName": "premature_exit"
+    "resetFormOnClick": false,
+    "boxShadow": "none",
+    "onClick": "{{Transformer.saveData();\nInsertCustomer.run().then(() => {\n  updateContactFormData.run().then(() => {\n    navigateTo('Home', {}, 'SAME_WINDOW');\n  });\n  showAlert('Daten Erfolgreich gespeichert.', 'success');\n}).catch(() => {\n  showAlert('Fehler mit Speicherung.', 'error');\n});}}",
+    "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+    "topRow": 5,
+    "type": "BUTTON_WIDGET",
+    "topRowBeforeCollapse": 11,
+    "animateLoading": true,
+    "leftColumn": 47,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "isVisible"}
+    ],
+    "text": "Speichern und beenden",
+    "isDisabled": false,
+    "isDefaultClickDisabled": true,
+    "iconName": "saved",
+    "bottomRowBeforeCollapse": 15,
+    "isVisible": "{{EligibilityChecker.rejectionReasons.length !== 0}}",
+    "version": 1,
+    "tags": ["Buttons"],
+    "isLoading": false,
+    "disabledWhenInvalid": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "originalBottomRow": 10,
+    "placement": "BETWEEN",
+    "mobileBottomRow": 16,
+    "widgetName": "premature_exit",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "displayName": "Button",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "bottomRow": 9,
+    "parentRowSpace": 10,
+    "hideCard": false,
+    "mobileRightColumn": 60,
+    "parentColumnSpace": 29.109375,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "key": "594f29jphk",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "ui07dnee7m",
+    "minWidth": 120,
+    "recaptchaType": "V3",
+    "parentId": "sl008sjkbd",
+    "renderMode": "CANVAS",
+    "mobileTopRow": 12,
+    "responsiveBehavior": "hug",
+    "originalTopRow": 6,
+    "mobileLeftColumn": 44,
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left"
 }

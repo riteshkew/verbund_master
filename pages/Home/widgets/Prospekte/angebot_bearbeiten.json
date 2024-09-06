@@ -1,88 +1,66 @@
 {
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
-  "boxShadow": "none",
-  "buttonVariant": "PRIMARY",
-  "childStylesheet": {
-    "button": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    }
-  },
-  "displayName": "Button Group",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "groupButtons.groupButton1.buttonColor"
-    },
-    {
-      "key": "isDisabled"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "groupButtons.groupButton2.isDisabled"
-    },
-    {
-      "key": "isDisabled"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "groupButtons.groupButton1.onClick"
-    }
-  ],
-  "groupButtons": {
-    "groupButton1": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "buttonType": "SIMPLE",
-      "iconName": "envelope",
-      "id": "groupButton1",
-      "index": 0,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Bearbeiten",
-      "menuItems": {},
-      "onClick": "{{storeValue('currentCustomer', bearbeitung.selectedRow).then(() => {\n  navigateTo('Angebot', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('\"Fehler\"', 'error');\n});}}",
-      "placement": "CENTER",
-      "widgetId": ""
-    }
-  },
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-  "isCanvas": false,
-  "isDeprecated": false,
-  "isDisabled": "{{bearbeitung.selectedRow.id === \"\"}}",
-  "isLoading": false,
-  "isVisible": true,
-  "key": "ny4wecpos3",
-  "leftColumn": 0,
-  "minWidth": 450,
-  "mobileBottomRow": 118,
-  "mobileLeftColumn": 28,
-  "mobileRightColumn": 52,
-  "mobileTopRow": 114,
-  "orientation": "horizontal",
-  "originalBottomRow": 9,
-  "originalTopRow": 5,
-  "parentColumnSpace": 19.09375,
-  "parentId": "0aop8iraes",
-  "parentRowSpace": 10,
-  "renderMode": "CANVAS",
-  "responsiveBehavior": "fill",
-  "rightColumn": 16,
-  "searchTags": [
-    "click",
-    "submit"
-  ],
-  "tags": [
-    "Buttons"
-  ],
-  "topRow": 4,
-  "type": "BUTTON_GROUP_WIDGET",
-  "version": 1,
-  "widgetId": "6w0akhupj3",
-  "widgetName": "angebot_bearbeiten"
+    "boxShadow": "none",
+    "mobileBottomRow": 118,
+    "widgetName": "angebot_bearbeiten",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [
+        {"key": "groupButtons.groupButton2.isDisabled"},
+        {"key": "isDisabled"}
+    ],
+    "displayName": "Button Group",
+    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 4,
+    "bottomRow": 8,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {"groupButton1": {
+        "onClick": "{{storeValue('currentCustomer', bearbeitung.selectedRow).then(() => {\n  navigateTo('Angebot', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('\"Fehler\"', 'error');\n});}}",
+        "buttonType": "SIMPLE",
+        "iconName": "envelope",
+        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+        "widgetId": "",
+        "menuItems": {},
+        "index": 0,
+        "label": "Bearbeiten",
+        "id": "groupButton1",
+        "placement": "CENTER",
+        "isVisible": true,
+        "isDisabled": false
+    }},
+    "hideCard": false,
+    "mobileRightColumn": 52,
+    "animateLoading": true,
+    "parentColumnSpace": 19.09375,
+    "dynamicTriggerPathList": [{"key": "groupButtons.groupButton1.onClick"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "groupButtons.groupButton1.buttonColor"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{bearbeitung.selectedRow.id === \"\"}}",
+    "key": "ny4wecpos3",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 16,
+    "widgetId": "6w0akhupj3",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0aop8iraes",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 114,
+    "responsiveBehavior": "fill",
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 5,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 28,
+    "originalBottomRow": 9,
+    "buttonVariant": "PRIMARY"
 }

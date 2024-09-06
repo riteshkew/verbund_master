@@ -1,1261 +1,999 @@
 {
-  "animateLoading": true,
-  "autoGenerateForm": true,
-  "backgroundColor": "#fff",
-  "borderColor": "",
-  "borderRadius": "1.5rem",
-  "borderWidth": "1",
-  "bottomRow": 47,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "childStylesheet": {
-    "ARRAY": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none",
-      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "cellBoxShadow": "none"
-    },
-    "CHECKBOX": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-    },
-    "CURRENCY_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "DATEPICKER": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "EMAIL_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "MULTILINE_TEXT_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "MULTISELECT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "NUMBER_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "OBJECT": {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none",
-      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "cellBoxShadow": "none"
-    },
-    "PASSWORD_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "PHONE_NUMBER_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "RADIO_GROUP": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "boxShadow": "none"
-    },
-    "SELECT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    },
-    "SWITCH": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "boxShadow": "none"
-    },
-    "TEXT_INPUT": {
-      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "boxShadow": "none"
-    }
-  },
-  "disabledWhenInvalid": true,
-  "displayName": "JSON Form",
-  "dynamicBindingPathList": [
-    {
-      "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
-    },
-    {
-      "key": "resetButtonStyles.borderRadius"
-    },
-    {
-      "key": "sourceData"
-    },
-    {
-      "key": "schema.__root_schema__.children.Baujahr.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Baujahr.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Baujahr.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.SanierungJahr.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.SanierungJahr.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.SanierungJahr.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizanlage.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizanlage.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.EnergieausweisVorhanden.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.EnergieausweisVorhanden.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizungsart.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizungsart.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Immobilienart.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Immobilienart.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorlauftemperatur.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorlauftemperatur.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorlauftemperatur.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.BeheizteFlaeche.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.BeheizteFlaeche.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.BeheizteFlaeche.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Einheiten.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Einheiten.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizkreise.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizkreise.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizkreise.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Warmwasserbereitung.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Warmwasserbereitung.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Warmwasserbereitung.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherMitWaermepumpeIntegriert.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherMitWaermepumpeIntegriert.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Solarthermieanlage.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Solarthermieanlage.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.EntscheidungGesendetAm.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.EntscheidungGesendetAm.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.EntscheidungGesendetAm.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.anPartnerGesendetAm.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.anPartnerGesendetAm.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.anPartnerGesendetAm.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Personen.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Personen.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Personen.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.cellBorderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Einheiten.options"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizanlage.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN.label"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.label"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.label"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.isRequired"
-    },
-    {
-      "key": "schema.__root_schema__.children.Solarthermieanlage.isRequired"
-    },
-    {
-      "key": "schema.__root_schema__.children.Solarthermieanlage.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.vorhandeneWarmwasserbereitungBleiben.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.vorhandeneWarmwasserbereitungBleiben.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwasserspeicherMitWaermepumpeIntegriert.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Immobilienart.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Personen.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Baujahr.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.SanierungJahr.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizanlage.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.EnergieausweisVorhanden.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizungsart.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Einheiten.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorlauftemperatur.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.BeheizteFlaeche.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizkreise.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Warmwasserbereitung.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.vorhandeneWarmwasserbereitungBleiben.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Nachname.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Nachname.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Nachname.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorname.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorname.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorname.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Anrede.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Anrede.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Anrede.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Telefonnummer.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Telefonnummer.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Telefonnummer.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Email.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Email.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Email.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Strasse.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Strasse.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Strasse.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Hausnummer.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Hausnummer.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Hausnummer.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.PLZ.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.PLZ.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.PLZ.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Ort.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Ort.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.Ort.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Nachname.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Ort.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Hausnummer.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.PLZ.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Strasse.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Email.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Telefonnummer.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Anrede.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorname.isVisible"
-    },
-    {
-      "key": "isVisible"
-    }
-  ],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "schema.__root_schema__.children.Immobilienart.onOptionChange"
-    },
-    {
-      "key": "schema.__root_schema__.children.Vorlauftemperatur.onTextChanged"
-    },
-    {
-      "key": "schema.__root_schema__.children.Heizkreise.onTextChanged"
-    },
-    {
-      "key": "onSubmit"
-    }
-  ],
-  "fieldLimitExceeded": false,
-  "fixedFooter": true,
-  "flexVerticalAlignment": "start",
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
-  "isDeprecated": false,
-  "isLoading": false,
-  "isVisible": "{{Select1.selectedOptionValue !== undefined && Select1.selectedOptionValue !== \"\" }}",
-  "key": "f1p5oaixd6",
-  "leftColumn": 36,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 4,
-  "minWidth": 450,
-  "mobileBottomRow": 219,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 178,
-  "onSubmit": "{{updateCustomer.run().then(() => {\n  showAlert('Daten aktualisiert', 'success');\n  getCustomer.run().catch(() => {\n    showAlert('Könnte aktuelle Daten herunterladen', \"Error\");\n  });\n}).catch(() => {\n  showAlert('Fehler mit Datenbank Speicherung', 'error');\n});}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 26,
-  "parentColumnSpace": 19.09375,
-  "parentId": "0",
-  "parentRowSpace": 10,
-  "renderMode": "CANVAS",
-  "resetButtonLabel": "Reset",
-  "resetButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "boxShadow": "none",
-    "buttonColor": "#ca520f",
-    "buttonVariant": "SECONDARY",
-    "iconAlign": "left",
-    "iconName": "reset"
-  },
-  "responsiveBehavior": "fill",
-  "rightColumn": 59,
-  "schema": {
-    "__root_schema__": {
-      "accessor": "__root_schema__",
-      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-      "boxShadow": "none",
-      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-      "cellBoxShadow": "none",
-      "children": {
-        "Anrede": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Anrede",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Anrede))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Anrede",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Anrede\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Anrede",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Anrede",
-          "position": 24
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "borderColor": "",
+    "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
+    "onSubmit": "{{updateCustomer.run().then(() => {\n  showAlert('Daten aktualisiert', 'success');\n  getCustomer.run().catch(() => {\n    showAlert('Könnte aktuelle Daten herunterladen', \"Error\");\n  });\n}).catch(() => {\n  showAlert('Fehler mit Datenbank Speicherung', 'error');\n});}}",
+    "topRow": 26,
+    "type": "JSON_FORM_WIDGET",
+    "animateLoading": true,
+    "leftColumn": 36,
+    "dynamicBindingPathList": [
+        {"key": "boxShadow"},
+        {"key": "submitButtonStyles.buttonColor"},
+        {"key": "submitButtonStyles.borderRadius"},
+        {"key": "resetButtonStyles.borderRadius"},
+        {"key": "sourceData"},
+        {"key": "schema.__root_schema__.children.Baujahr.defaultValue"},
+        {"key": "schema.__root_schema__.children.Baujahr.accentColor"},
+        {"key": "schema.__root_schema__.children.Baujahr.borderRadius"},
+        {"key": "schema.__root_schema__.children.SanierungJahr.defaultValue"},
+        {"key": "schema.__root_schema__.children.SanierungJahr.accentColor"},
+        {"key": "schema.__root_schema__.children.SanierungJahr.borderRadius"},
+        {"key": "schema.__root_schema__.children.Heizanlage.defaultValue"},
+        {"key": "schema.__root_schema__.children.Heizanlage.accentColor"},
+        {"key": "schema.__root_schema__.children.EnergieausweisVorhanden.defaultValue"},
+        {"key": "schema.__root_schema__.children.EnergieausweisVorhanden.accentColor"},
+        {"key": "schema.__root_schema__.children.Heizungsart.defaultValue"},
+        {"key": "schema.__root_schema__.children.Heizungsart.accentColor"},
+        {"key": "schema.__root_schema__.children.Immobilienart.accentColor"},
+        {"key": "schema.__root_schema__.children.Immobilienart.borderRadius"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN.accentColor"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN.borderRadius"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.accentColor"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.borderRadius"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.accentColor"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.borderRadius"},
+        {"key": "schema.__root_schema__.children.Vorlauftemperatur.defaultValue"},
+        {"key": "schema.__root_schema__.children.Vorlauftemperatur.accentColor"},
+        {"key": "schema.__root_schema__.children.Vorlauftemperatur.borderRadius"},
+        {"key": "schema.__root_schema__.children.BeheizteFlaeche.defaultValue"},
+        {"key": "schema.__root_schema__.children.BeheizteFlaeche.accentColor"},
+        {"key": "schema.__root_schema__.children.BeheizteFlaeche.borderRadius"},
+        {"key": "schema.__root_schema__.children.Einheiten.defaultValue"},
+        {"key": "schema.__root_schema__.children.Einheiten.accentColor"},
+        {"key": "schema.__root_schema__.children.Heizkreise.defaultValue"},
+        {"key": "schema.__root_schema__.children.Heizkreise.accentColor"},
+        {"key": "schema.__root_schema__.children.Heizkreise.borderRadius"},
+        {"key": "schema.__root_schema__.children.Warmwasserbereitung.defaultValue"},
+        {"key": "schema.__root_schema__.children.Warmwasserbereitung.accentColor"},
+        {"key": "schema.__root_schema__.children.Warmwasserbereitung.borderRadius"},
+        {"key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.defaultValue"},
+        {"key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.accentColor"},
+        {"key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.borderRadius"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherMitWaermepumpeIntegriert.defaultValue"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherMitWaermepumpeIntegriert.accentColor"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.defaultValue"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.accentColor"},
+        {"key": "schema.__root_schema__.children.Solarthermieanlage.defaultValue"},
+        {"key": "schema.__root_schema__.children.Solarthermieanlage.accentColor"},
+        {"key": "schema.__root_schema__.children.EntscheidungGesendetAm.defaultValue"},
+        {"key": "schema.__root_schema__.children.EntscheidungGesendetAm.accentColor"},
+        {"key": "schema.__root_schema__.children.EntscheidungGesendetAm.borderRadius"},
+        {"key": "schema.__root_schema__.children.anPartnerGesendetAm.defaultValue"},
+        {"key": "schema.__root_schema__.children.anPartnerGesendetAm.accentColor"},
+        {"key": "schema.__root_schema__.children.anPartnerGesendetAm.borderRadius"},
+        {"key": "schema.__root_schema__.children.Personen.defaultValue"},
+        {"key": "schema.__root_schema__.children.Personen.accentColor"},
+        {"key": "schema.__root_schema__.children.Personen.borderRadius"},
+        {"key": "schema.__root_schema__.defaultValue"},
+        {"key": "schema.__root_schema__.borderRadius"},
+        {"key": "schema.__root_schema__.cellBorderRadius"},
+        {"key": "schema.__root_schema__.children.Einheiten.options"},
+        {"key": "schema.__root_schema__.children.Heizanlage.borderRadius"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN.label"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.label"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.label"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.isVisible"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherWuenschgroesse.isRequired"},
+        {"key": "schema.__root_schema__.children.Solarthermieanlage.isRequired"},
+        {"key": "schema.__root_schema__.children.Solarthermieanlage.isVisible"},
+        {"key": "schema.__root_schema__.children.vorhandeneWarmwasserbereitungBleiben.defaultValue"},
+        {"key": "schema.__root_schema__.children.vorhandeneWarmwasserbereitungBleiben.accentColor"},
+        {"key": "schema.__root_schema__.children.WarmwasserspeicherMitWaermepumpeIntegriert.isVisible"},
+        {"key": "schema.__root_schema__.children.WarmwsserspeicherKapazitaet.isVisible"},
+        {"key": "schema.__root_schema__.children.Immobilienart.isVisible"},
+        {"key": "schema.__root_schema__.children.Personen.isVisible"},
+        {"key": "schema.__root_schema__.children.Baujahr.isVisible"},
+        {"key": "schema.__root_schema__.children.SanierungJahr.isVisible"},
+        {"key": "schema.__root_schema__.children.Heizanlage.isVisible"},
+        {"key": "schema.__root_schema__.children.EnergieausweisVorhanden.isVisible"},
+        {"key": "schema.__root_schema__.children.Heizungsart.isVisible"},
+        {"key": "schema.__root_schema__.children.Einheiten.isVisible"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN.isVisible"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_1.isVisible"},
+        {"key": "schema.__root_schema__.children.JahresHeizenergiemengeN_2.isVisible"},
+        {"key": "schema.__root_schema__.children.Vorlauftemperatur.isVisible"},
+        {"key": "schema.__root_schema__.children.BeheizteFlaeche.isVisible"},
+        {"key": "schema.__root_schema__.children.Heizkreise.isVisible"},
+        {"key": "schema.__root_schema__.children.Warmwasserbereitung.isVisible"},
+        {"key": "schema.__root_schema__.children.vorhandeneWarmwasserbereitungBleiben.isVisible"},
+        {"key": "schema.__root_schema__.children.Nachname.defaultValue"},
+        {"key": "schema.__root_schema__.children.Nachname.borderRadius"},
+        {"key": "schema.__root_schema__.children.Nachname.accentColor"},
+        {"key": "schema.__root_schema__.children.Vorname.defaultValue"},
+        {"key": "schema.__root_schema__.children.Vorname.borderRadius"},
+        {"key": "schema.__root_schema__.children.Vorname.accentColor"},
+        {"key": "schema.__root_schema__.children.Anrede.defaultValue"},
+        {"key": "schema.__root_schema__.children.Anrede.borderRadius"},
+        {"key": "schema.__root_schema__.children.Anrede.accentColor"},
+        {"key": "schema.__root_schema__.children.Telefonnummer.defaultValue"},
+        {"key": "schema.__root_schema__.children.Telefonnummer.borderRadius"},
+        {"key": "schema.__root_schema__.children.Telefonnummer.accentColor"},
+        {"key": "schema.__root_schema__.children.Email.defaultValue"},
+        {"key": "schema.__root_schema__.children.Email.borderRadius"},
+        {"key": "schema.__root_schema__.children.Email.accentColor"},
+        {"key": "schema.__root_schema__.children.Strasse.defaultValue"},
+        {"key": "schema.__root_schema__.children.Strasse.borderRadius"},
+        {"key": "schema.__root_schema__.children.Strasse.accentColor"},
+        {"key": "schema.__root_schema__.children.Hausnummer.defaultValue"},
+        {"key": "schema.__root_schema__.children.Hausnummer.borderRadius"},
+        {"key": "schema.__root_schema__.children.Hausnummer.accentColor"},
+        {"key": "schema.__root_schema__.children.PLZ.defaultValue"},
+        {"key": "schema.__root_schema__.children.PLZ.borderRadius"},
+        {"key": "schema.__root_schema__.children.PLZ.accentColor"},
+        {"key": "schema.__root_schema__.children.Ort.defaultValue"},
+        {"key": "schema.__root_schema__.children.Ort.borderRadius"},
+        {"key": "schema.__root_schema__.children.Ort.accentColor"},
+        {"key": "schema.__root_schema__.children.Nachname.isVisible"},
+        {"key": "schema.__root_schema__.children.Ort.isVisible"},
+        {"key": "schema.__root_schema__.children.Hausnummer.isVisible"},
+        {"key": "schema.__root_schema__.children.PLZ.isVisible"},
+        {"key": "schema.__root_schema__.children.Strasse.isVisible"},
+        {"key": "schema.__root_schema__.children.Email.isVisible"},
+        {"key": "schema.__root_schema__.children.Telefonnummer.isVisible"},
+        {"key": "schema.__root_schema__.children.Anrede.isVisible"},
+        {"key": "schema.__root_schema__.children.Vorname.isVisible"},
+        {"key": "isVisible"}
+    ],
+    "showReset": true,
+    "flexVerticalAlignment": "start",
+    "dynamicHeight": "AUTO_HEIGHT",
+    "autoGenerateForm": true,
+    "resetButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "buttonColor": "#ca520f",
+        "iconName": "reset",
+        "buttonVariant": "SECONDARY",
+        "iconAlign": "left"
+    },
+    "isVisible": "{{Select1.selectedOptionValue !== undefined && Select1.selectedOptionValue !== \"\" }}",
+    "version": 1,
+    "tags": [
+        "Suggested",
+        "Layout"
+    ],
+    "isLoading": false,
+    "submitButtonLabel": "Submit",
+    "childStylesheet": {
+        "CHECKBOX": {
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Baujahr": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Baujahr",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "closeOnSelection": false,
-          "convertToISO": false,
-          "dataType": "string",
-          "dateFormat": "YYYY",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.Baujahr, \"YYYY-MM-DD HH:mm\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Datepicker",
-          "identifier": "Baujahr",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"TODO\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Baujahr des Hauses",
-          "labelTextSize": "0.875rem",
-          "maxDate": "2121-12-31T18:29:00.000Z",
-          "minDate": "1920-12-31T18:30:00.000Z",
-          "originalIdentifier": "Baujahr",
-          "position": 2,
-          "shortcuts": false,
-          "sourceData": "2024-02-22 14:31",
-          "timePrecision": "minute"
+        "ARRAY": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "cellBoxShadow": "none"
         },
-        "BeheizteFlaeche": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "BeheizteFlaeche",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BeheizteFlaeche))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "BeheizteFlaeche",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "beheizte Fläche (in m²)",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "BeheizteFlaeche",
-          "position": 12,
-          "sourceData": 25
+        "CURRENCY_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Einheiten": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Einheiten",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Einheiten))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "Einheiten",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Einheiten",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"kWh\",\n    \"value\": \"kWh\"\n  },\n\t{\n    \"label\": {{Form.formData.Heizungsart === \"Gas\"? \"m³\" : \"l\"}},\n    \"value\": {{Form.formData.Heizungsart === \"Gas\"? \"m3\" : \"l\"}}\n\t\t}\n]",
-          "originalIdentifier": "Einheiten",
-          "position": 7
+        "DATEPICKER": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Email": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Email",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Email))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Email",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Email\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Email",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Email",
-          "position": 27
+        "PHONE_NUMBER_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "EnergieausweisVorhanden": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "EnergieausweisVorhanden",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.EnergieausweisVorhanden))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "EnergieausweisVorhanden",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"EnergieausweisVorhanden\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Energieausweis Vorhanden",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
-          "originalIdentifier": "EnergieausweisVorhanden",
-          "position": 5,
-          "sourceData": "J"
+        "OBJECT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "cellBoxShadow": "none"
         },
-        "EntscheidungGesendetAm": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "EntscheidungGesendetAm",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.EntscheidungGesendetAm))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "EntscheidungGesendetAm",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "Entscheidung Gesendet Am",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "EntscheidungGesendetAm",
-          "position": 20
+        "MULTISELECT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Hausnummer": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Hausnummer",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Hausnummer))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Hausnummer",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Hausnummer\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Hausnummer",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Hausnummer",
-          "position": 29
+        "SELECT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Heizanlage": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Heizanlage",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Heizanlage))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Select",
-          "identifier": "Heizanlage",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isFilterable": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Heizanlage\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Heizanlage",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Fußbodenheizung (FBH)\",\n    \"value\": \"Fußbodenheizung (FBH)\"\n  },\n  {\n    \"label\": \"Radiatoren\",\n    \"value\": \"Radiatoren\"\n  },\n  {\n    \"label\": \"FBH und Radiatoren gemischt\",\n    \"value\": \"FBH und Radiatoren gemischt\"\n  }\n]",
-          "originalIdentifier": "Heizanlage",
-          "position": 4,
-          "serverSideFiltering": false,
-          "sourceData": "Sonstiges"
+        "NUMBER_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Heizkreise": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Heizkreise",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Heizkreise))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "Heizkreise",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Anzahl separater Heizkreise",
-          "labelTextSize": "0.875rem",
-          "onTextChanged": "{{EligibilityChecker.checkHeatingCircuits(Form.formData.Heizkreise)}}",
-          "originalIdentifier": "Heizkreise",
-          "position": 13,
-          "sourceData": 2
+        "PASSWORD_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Heizungsart": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Heizungsart",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Heizungsart))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "Heizungsart",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Heizungsart\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Heizungsart",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Gas\",\n    \"value\": \"Gas\"\n  },\n  {\n    \"label\": \"Öl\",\n    \"value\": \"Öl\"\n  }\n]",
-          "originalIdentifier": "Heizungsart",
-          "position": 6,
-          "sourceData": "Gas"
+        "EMAIL_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "Immobilienart": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Immobilienart",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "",
-          "fieldType": "Select",
-          "identifier": "Immobilienart",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isFilterable": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Immobilienart\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "In welcher Art von Immobilie leben Sie",
-          "labelTextSize": "0.875rem",
-          "onOptionChange": "{{EligibilityChecker.checkRealityType(Form.formData.Immobilienart)}}",
-          "options": "[\n  {\n    \"label\": \"Ein- oder Mehrfamilienhaus\",\n    \"value\": \"Ein-oder Mehrfamilienhaus\"\n  },\n  {\n    \"label\": \"Doppelhaushälfte\",\n    \"value\": \"Doppelhaushälfte\"\n  },\n  {\n    \"label\": \"Reihenhaus\",\n    \"value\": \"Reihenhaus\"\n  },\n\t\t{\n    \"label\": \"Wohnung/Mehrparteienhaus\",\n    \"value\": \"Wohnung/Mehrparteienhaus\"\n  },\n\t{\n    \"label\": \"Sonstiges\",\n    \"value\": \"Sonstiges\"\n  }\n]",
-          "originalIdentifier": "Immobilienart",
-          "position": 0,
-          "serverSideFiltering": false,
-          "sourceData": "Ein-oder Mehrfamilienhaus"
+        "RADIO_GROUP": {
+            "boxShadow": "none",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "JahresHeizenergiemengeN": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "JahresHeizenergiemengeN",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "0",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "JahresHeizenergiemengeN",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": true,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Jahres Heizenergiemenge ({{new Date().getFullYear()-1}})",
-          "labelTextSize": "0.875rem",
-          "minNum": "0",
-          "originalIdentifier": "JahresHeizenergiemengeN",
-          "position": 8,
-          "sourceData": 12
+        "SWITCH": {
+            "boxShadow": "none",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "JahresHeizenergiemengeN_1": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "JahresHeizenergiemengeN_1",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "0",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "JahresHeizenergiemengeN_1",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": true,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Jahres Heizenergiemenge ({{new Date().getFullYear()-2}})",
-          "labelTextSize": "0.875rem",
-          "minNum": "0",
-          "originalIdentifier": "JahresHeizenergiemengeN_1",
-          "position": 9,
-          "sourceData": 14
+        "TEXT_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         },
-        "JahresHeizenergiemengeN_2": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "JahresHeizenergiemengeN_2",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "0",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "JahresHeizenergiemengeN_2",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": true,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Jahres Heizenergiemenge ({{new Date().getFullYear()-3}})",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "JahresHeizenergiemengeN_2",
-          "position": 10,
-          "sourceData": 15
-        },
-        "Nachname": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Nachname",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Nachname))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Nachname",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Nachname\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Nachname",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Nachname",
-          "position": 22
-        },
-        "Ort": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Ort",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Ort))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Ort",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Ort\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Ort",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Ort",
-          "position": 30
-        },
-        "PLZ": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "PLZ",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PLZ))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "PLZ",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"PLZ\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "PLZ",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "PLZ",
-          "position": 29
-        },
-        "Personen": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Personen",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Personen))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "Personen",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Personen\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Wie viele Personen leben im Haushalt",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Personen",
-          "position": 1,
-          "sourceData": 23
-        },
-        "SanierungJahr": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "SanierungJahr",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "closeOnSelection": false,
-          "convertToISO": false,
-          "dataType": "number",
-          "dateFormat": "YYYY",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SanierungJahr))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Datepicker",
-          "identifier": "SanierungJahr",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"SanierungJahr\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Jahr der letzten Sanierung (Dämmung, Fenstertausch)",
-          "labelTextSize": "0.875rem",
-          "maxDate": "2121-12-31T18:29:00.000Z",
-          "minDate": "1920-12-31T18:30:00.000Z",
-          "originalIdentifier": "SanierungJahr",
-          "position": 3,
-          "shortcuts": false,
-          "sourceData": 2024,
-          "timePrecision": "minute"
-        },
-        "Solarthermieanlage": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Solarthermieanlage",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Solarthermieanlage))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "Solarthermieanlage",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Solarthermieanlage für Warmwasserbereitung vorhanden",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
-          "originalIdentifier": "Solarthermieanlage",
-          "position": 19,
-          "sourceData": "J"
-        },
-        "Strasse": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Strasse",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Strasse))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Strasse",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Strasse\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Strasse",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Strasse",
-          "position": 28
-        },
-        "Telefonnummer": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Telefonnummer",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Telefonnummer))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Telefonnummer",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Telefonnummer\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Telefonnummer",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Telefonnummer",
-          "position": 26
-        },
-        "Vorlauftemperatur": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Vorlauftemperatur",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Vorlauftemperatur))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "Vorlauftemperatur",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "aktuelle Vorlauftemperatur (in Grad C)",
-          "labelTextSize": "0.875rem",
-          "onTextChanged": "{{EligibilityChecker.checkTemperature(Form.formData.Vorlauftemperatur)}}",
-          "originalIdentifier": "Vorlauftemperatur",
-          "position": 11,
-          "sourceData": 25
-        },
-        "Vorname": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Vorname",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Vorname))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "Vorname",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Vorname\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Vorname",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Vorname",
-          "position": 23
-        },
-        "Warmwasserbereitung": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "Warmwasserbereitung",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Warmwasserbereitung))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Select",
-          "identifier": "Warmwasserbereitung",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isFilterable": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "derzeitige Warmwasserbereitung",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"separater Warmwasserboiler oder Durchlauferhitzer, der von Heizanlage mitbeheizt wird\",\n    \"value\": \"separater Warmwasserboiler oder Durchlauferhitzer, der von Heizanlage mitbeheizt wird\"\n  },\n  {\n    \"label\": \"separater Boiler, der extra mit Gas beheizt wird\",\n    \"value\": \"separater Boiler, der extra mit Gas beheizt wird\"\n  },\n  {\n    \"label\": \"separater E-Boiler\",\n    \"value\": \"separater E-Boiler\"\n  },\n\t{\n    \"label\": \"Brauchwasserwärmepumpe\",\n    \"value\": \"Brauchwasserwärmepumpe\"\n  }\n]",
-          "originalIdentifier": "Warmwasserbereitung",
-          "position": 14,
-          "serverSideFiltering": false,
-          "sourceData": "separater E-Boiler"
-        },
-        "WarmwasserspeicherMitWaermepumpeIntegriert": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "WarmwasserspeicherMitWaermepumpeIntegriert",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WarmwasserspeicherMitWaermepumpeIntegriert))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "WarmwasserspeicherMitWaermepumpeIntegriert",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Soll künftig der Warmwasserspeicher (190l) in Wärmepumpe integriert sein?",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
-          "originalIdentifier": "WarmwasserspeicherMitWaermepumpeIntegriert",
-          "position": 17,
-          "sourceData": "N"
-        },
-        "WarmwasserspeicherWuenschgroesse": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "WarmwasserspeicherWuenschgroesse",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WarmwasserspeicherWuenschgroesse))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "WarmwasserspeicherWuenschgroesse",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (\nForm.formData.vorhandeneWarmwasserbereitungBleiben !== \"J\" &&\nForm.formData.WarmwasserspeicherMitWaermepumpeIntegriert !== null && Form.formData.WarmwasserspeicherMitWaermepumpeIntegriert ===\"N\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Wunschgröße für separaten Warmwasserspeicher (in Liter)\n",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"300\",\n    \"value\": \"300\"\n  },\n  {\n    \"label\": \"500\",\n    \"value\": \"500\"\n  }\n]",
-          "originalIdentifier": "WarmwasserspeicherWuenschgroesse",
-          "position": 18,
-          "sourceData": 300
-        },
-        "WarmwsserspeicherKapazitaet": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "WarmwsserspeicherKapazitaet",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WarmwsserspeicherKapazitaet))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "WarmwsserspeicherKapazitaet",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Fassungsvermögen derzeitiger Warmwasserspeicher (in Liter)",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "WarmwsserspeicherKapazitaet",
-          "position": 16,
-          "sourceData": 12
-        },
-        "anPartnerGesendetAm": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "anPartnerGesendetAm",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.anPartnerGesendetAm))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "anPartnerGesendetAm",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "An Partner Gesendet Am",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "anPartnerGesendetAm",
-          "position": 21
-        },
-        "vorhandeneWarmwasserbereitungBleiben": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "accessor": "vorhandeneWarmwasserbereitungBleiben",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.vorhandeneWarmwasserbereitungBleiben))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "fieldType": "Radio Group",
-          "identifier": "vorhandeneWarmwasserbereitungBleiben",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"vorhandeneWarmwasserbereitungBleiben\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
-          "label": "Soll vorhandene Warmwasserbereitung bestehen bleiben? ",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
-          "originalIdentifier": "vorhandeneWarmwasserbereitungBleiben",
-          "position": 15
+        "MULTILINE_TEXT_INPUT": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
         }
-      },
-      "dataType": "object",
-      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(Form.sourceData, Form.formData, Form.fieldState)}}",
-      "fieldType": "Object",
-      "identifier": "__root_schema__",
-      "isCustomField": false,
-      "isDisabled": false,
-      "isRequired": false,
-      "isVisible": true,
-      "label": "",
-      "labelTextSize": "0.875rem",
-      "originalIdentifier": "__root_schema__",
-      "position": -1,
-      "sourceData": {
-        "Baujahr": "2024-02-22 14:31",
-        "BeheizteFlaeche": 25,
-        "EnergieausweisVorhanden": "J",
-        "Heizanlage": "Sonstiges",
-        "Heizkreise": 2,
-        "Heizungsart": "Gas",
-        "Immobilienart": "Ein-oder Mehrfamilienhaus",
-        "JahresHeizenergiemengeN": 12,
-        "JahresHeizenergiemengeN_1": 14,
-        "JahresHeizenergiemengeN_2": 15,
-        "Personen": 23,
-        "SanierungJahr": 2024,
-        "Solarthermieanlage": "J",
-        "Vorlauftemperatur": 25,
-        "Warmwasserbereitung": "separater E-Boiler",
-        "WarmwasserspeicherMitWaermepumpeIntegriert": "N",
-        "WarmwasserspeicherWuenschgroesse": 300,
-        "WarmwsserspeicherKapazitaet": 12,
-        "beantragtAm": 1708531506923,
-        "kontaktiertAm": 1708530385077
-      }
-    }
-  },
-  "scrollContents": true,
-  "showReset": true,
-  "sourceData": "{{{\n\"Nachname\":null,\n\"Vorname\":null,\n\"Anrede\":null,\n\"Telefonnummer\":null,\n\"Email\":null,\n\"Strasse\": null,\n\"Hausnummer\":null,\n\"PLZ\":null,\n\"Ort\":null,\n\t\n\"Baujahr\":null,\n\"SanierungJahr\":null,\n\"Heizanlage\":null,\n\"EnergieausweisVorhanden\":null,\n\"Heizungsart\":null,\n\"Immobilienart\":null,\n\"JahresHeizenergiemengeN\":null,\n\"JahresHeizenergiemengeN_1\":null,\n\"JahresHeizenergiemengeN_2\":null,\n\"Vorlauftemperatur\":null,\n\"BeheizteFlaeche\":null,\n\"Einheiten\": null,\n\"Heizkreise\":null,\n\"Warmwasserbereitung\":null,\n\"vorhandeneWarmwasserbereitungBleiben\":null,\t\n\"WarmwsserspeicherKapazitaet\":null,\n\"WarmwasserspeicherMitWaermepumpeIntegriert\":null,\n\"WarmwasserspeicherWuenschgroesse\":null,\n\"Solarthermieanlage\":null,\n\"EntscheidungGesendetAm\":null,\n\"anPartnerGesendetAm\":null,\n\"Personen\":null,\n}}}",
-  "submitButtonLabel": "Submit",
-  "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY",
-    "iconAlign": "left",
-    "iconName": "saved"
-  },
-  "tags": [
-    "Suggested",
-    "Layout"
-  ],
-  "title": "Daten ändern",
-  "topRow": 26,
-  "type": "JSON_FORM_WIDGET",
-  "useSourceData": false,
-  "version": 1,
-  "widgetId": "jvhfgriq6q",
-  "widgetName": "Form"
+    },
+    "disabledWhenInvalid": true,
+    "borderRadius": "1.5rem",
+    "originalBottomRow": 47,
+    "useSourceData": false,
+    "schema": {"__root_schema__": {
+        "labelTextSize": "0.875rem",
+        "identifier": "__root_schema__",
+        "boxShadow": "none",
+        "isRequired": false,
+        "isCustomField": false,
+        "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(Form.sourceData, Form.formData, Form.fieldState)}}",
+        "dataType": "object",
+        "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+        "accessor": "__root_schema__",
+        "isVisible": true,
+        "label": "",
+        "originalIdentifier": "__root_schema__",
+        "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+        "children": {
+            "EnergieausweisVorhanden": {
+                "labelTextSize": "0.875rem",
+                "identifier": "EnergieausweisVorhanden",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.EnergieausweisVorhanden))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "EnergieausweisVorhanden",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"EnergieausweisVorhanden\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Energieausweis Vorhanden",
+                "originalIdentifier": "EnergieausweisVorhanden",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
+                "position": 5,
+                "isDisabled": false,
+                "sourceData": "J",
+                "fieldType": "Radio Group"
+            },
+            "Email": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Email",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Email))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Email",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Email\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Email",
+                "originalIdentifier": "Email",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 27,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "Warmwasserbereitung": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Warmwasserbereitung",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isFilterable": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Warmwasserbereitung))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "Warmwasserbereitung",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "derzeitige Warmwasserbereitung",
+                "serverSideFiltering": false,
+                "originalIdentifier": "Warmwasserbereitung",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"separater Warmwasserboiler oder Durchlauferhitzer, der von Heizanlage mitbeheizt wird\",\n    \"value\": \"separater Warmwasserboiler oder Durchlauferhitzer, der von Heizanlage mitbeheizt wird\"\n  },\n  {\n    \"label\": \"separater Boiler, der extra mit Gas beheizt wird\",\n    \"value\": \"separater Boiler, der extra mit Gas beheizt wird\"\n  },\n  {\n    \"label\": \"separater E-Boiler\",\n    \"value\": \"separater E-Boiler\"\n  },\n\t{\n    \"label\": \"Brauchwasserwärmepumpe\",\n    \"value\": \"Brauchwasserwärmepumpe\"\n  }\n]",
+                "position": 14,
+                "isDisabled": false,
+                "sourceData": "separater E-Boiler",
+                "fieldType": "Select"
+            },
+            "SanierungJahr": {
+                "boxShadow": "none",
+                "minDate": "1920-12-31T18:30:00.000Z",
+                "dateFormat": "YYYY",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SanierungJahr))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accessor": "SanierungJahr",
+                "shortcuts": false,
+                "convertToISO": false,
+                "children": {},
+                "isDisabled": false,
+                "sourceData": 2024,
+                "labelTextSize": "0.875rem",
+                "identifier": "SanierungJahr",
+                "isRequired": false,
+                "isCustomField": false,
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"SanierungJahr\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Jahr der letzten Sanierung (Dämmung, Fenstertausch)",
+                "originalIdentifier": "SanierungJahr",
+                "timePrecision": "minute",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "closeOnSelection": false,
+                "maxDate": "2121-12-31T18:29:00.000Z",
+                "position": 3,
+                "fieldType": "Datepicker"
+            },
+            "Einheiten": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Einheiten",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Einheiten))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Einheiten",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Einheiten",
+                "originalIdentifier": "Einheiten",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"kWh\",\n    \"value\": \"kWh\"\n  },\n\t{\n    \"label\": {{Form.formData.Heizungsart === \"Gas\"? \"m³\" : \"l\"}},\n    \"value\": {{Form.formData.Heizungsart === \"Gas\"? \"m3\" : \"l\"}}\n\t\t}\n]",
+                "position": 7,
+                "isDisabled": false,
+                "fieldType": "Radio Group"
+            },
+            "Heizungsart": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Heizungsart",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Heizungsart))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "Heizungsart",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Heizungsart\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Heizungsart",
+                "originalIdentifier": "Heizungsart",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Gas\",\n    \"value\": \"Gas\"\n  },\n  {\n    \"label\": \"Öl\",\n    \"value\": \"Öl\"\n  }\n]",
+                "position": 6,
+                "isDisabled": false,
+                "sourceData": "Gas",
+                "fieldType": "Radio Group"
+            },
+            "Hausnummer": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Hausnummer",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Hausnummer))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Hausnummer",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Hausnummer\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Hausnummer",
+                "originalIdentifier": "Hausnummer",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 29,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "Heizanlage": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Heizanlage",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isFilterable": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Heizanlage))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "Heizanlage",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Heizanlage\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Heizanlage",
+                "serverSideFiltering": false,
+                "originalIdentifier": "Heizanlage",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Fußbodenheizung (FBH)\",\n    \"value\": \"Fußbodenheizung (FBH)\"\n  },\n  {\n    \"label\": \"Radiatoren\",\n    \"value\": \"Radiatoren\"\n  },\n  {\n    \"label\": \"FBH und Radiatoren gemischt\",\n    \"value\": \"FBH und Radiatoren gemischt\"\n  }\n]",
+                "position": 4,
+                "isDisabled": false,
+                "sourceData": "Sonstiges",
+                "fieldType": "Select"
+            },
+            "Ort": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Ort",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Ort))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Ort",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Ort\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Ort",
+                "originalIdentifier": "Ort",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 30,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "anPartnerGesendetAm": {
+                "labelTextSize": "0.875rem",
+                "identifier": "anPartnerGesendetAm",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.anPartnerGesendetAm))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "anPartnerGesendetAm",
+                "isVisible": false,
+                "label": "An Partner Gesendet Am",
+                "originalIdentifier": "anPartnerGesendetAm",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 21,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "WarmwasserspeicherWuenschgroesse": {
+                "labelTextSize": "0.875rem",
+                "identifier": "WarmwasserspeicherWuenschgroesse",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WarmwasserspeicherWuenschgroesse))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "WarmwasserspeicherWuenschgroesse",
+                "isVisible": "{{((sourceData, formData, fieldState) => (\nForm.formData.vorhandeneWarmwasserbereitungBleiben !== \"J\" &&\nForm.formData.WarmwasserspeicherMitWaermepumpeIntegriert !== null && Form.formData.WarmwasserspeicherMitWaermepumpeIntegriert ===\"N\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Wunschgröße für separaten Warmwasserspeicher (in Liter)\n",
+                "originalIdentifier": "WarmwasserspeicherWuenschgroesse",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"300\",\n    \"value\": \"300\"\n  },\n  {\n    \"label\": \"500\",\n    \"value\": \"500\"\n  }\n]",
+                "position": 18,
+                "isDisabled": false,
+                "sourceData": 300,
+                "fieldType": "Radio Group"
+            },
+            "WarmwsserspeicherKapazitaet": {
+                "labelTextSize": "0.875rem",
+                "identifier": "WarmwsserspeicherKapazitaet",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WarmwsserspeicherKapazitaet))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "WarmwsserspeicherKapazitaet",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Fassungsvermögen derzeitiger Warmwasserspeicher (in Liter)",
+                "originalIdentifier": "WarmwsserspeicherKapazitaet",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 16,
+                "isDisabled": false,
+                "sourceData": 12,
+                "fieldType": "Number Input"
+            },
+            "vorhandeneWarmwasserbereitungBleiben": {
+                "labelTextSize": "0.875rem",
+                "identifier": "vorhandeneWarmwasserbereitungBleiben",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.vorhandeneWarmwasserbereitungBleiben))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "vorhandeneWarmwasserbereitungBleiben",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"vorhandeneWarmwasserbereitungBleiben\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Soll vorhandene Warmwasserbereitung bestehen bleiben? ",
+                "originalIdentifier": "vorhandeneWarmwasserbereitungBleiben",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
+                "position": 15,
+                "isDisabled": false,
+                "fieldType": "Radio Group"
+            },
+            "BeheizteFlaeche": {
+                "labelTextSize": "0.875rem",
+                "identifier": "BeheizteFlaeche",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BeheizteFlaeche))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "BeheizteFlaeche",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "beheizte Fläche (in m²)",
+                "originalIdentifier": "BeheizteFlaeche",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 12,
+                "isDisabled": false,
+                "sourceData": 25,
+                "fieldType": "Number Input"
+            },
+            "Personen": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Personen",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Personen))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "Personen",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Personen\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Wie viele Personen leben im Haushalt",
+                "originalIdentifier": "Personen",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 1,
+                "isDisabled": false,
+                "sourceData": 23,
+                "fieldType": "Number Input"
+            },
+            "Strasse": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Strasse",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Strasse))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Strasse",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Strasse\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Strasse",
+                "originalIdentifier": "Strasse",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 28,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "PLZ": {
+                "labelTextSize": "0.875rem",
+                "identifier": "PLZ",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PLZ))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "PLZ",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"PLZ\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "PLZ",
+                "originalIdentifier": "PLZ",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 29,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "JahresHeizenergiemengeN": {
+                "labelTextSize": "0.875rem",
+                "identifier": "JahresHeizenergiemengeN",
+                "boxShadow": "none",
+                "isRequired": true,
+                "isCustomField": false,
+                "defaultValue": "0",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "JahresHeizenergiemengeN",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Jahres Heizenergiemenge ({{new Date().getFullYear()-1}})",
+                "minNum": "0",
+                "originalIdentifier": "JahresHeizenergiemengeN",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 8,
+                "isDisabled": false,
+                "sourceData": 12,
+                "fieldType": "Number Input"
+            },
+            "EntscheidungGesendetAm": {
+                "labelTextSize": "0.875rem",
+                "identifier": "EntscheidungGesendetAm",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.EntscheidungGesendetAm))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "EntscheidungGesendetAm",
+                "isVisible": false,
+                "label": "Entscheidung Gesendet Am",
+                "originalIdentifier": "EntscheidungGesendetAm",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 20,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "Immobilienart": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Immobilienart",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isFilterable": false,
+                "isCustomField": false,
+                "defaultValue": "",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "Immobilienart",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Immobilienart\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "In welcher Art von Immobilie leben Sie",
+                "serverSideFiltering": false,
+                "originalIdentifier": "Immobilienart",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Ein- oder Mehrfamilienhaus\",\n    \"value\": \"Ein-oder Mehrfamilienhaus\"\n  },\n  {\n    \"label\": \"Doppelhaushälfte\",\n    \"value\": \"Doppelhaushälfte\"\n  },\n  {\n    \"label\": \"Reihenhaus\",\n    \"value\": \"Reihenhaus\"\n  },\n\t\t{\n    \"label\": \"Wohnung/Mehrparteienhaus\",\n    \"value\": \"Wohnung/Mehrparteienhaus\"\n  },\n\t{\n    \"label\": \"Sonstiges\",\n    \"value\": \"Sonstiges\"\n  }\n]",
+                "onOptionChange": "{{EligibilityChecker.checkRealityType(Form.formData.Immobilienart)}}",
+                "position": 0,
+                "isDisabled": false,
+                "sourceData": "Ein-oder Mehrfamilienhaus",
+                "fieldType": "Select"
+            },
+            "WarmwasserspeicherMitWaermepumpeIntegriert": {
+                "labelTextSize": "0.875rem",
+                "identifier": "WarmwasserspeicherMitWaermepumpeIntegriert",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WarmwasserspeicherMitWaermepumpeIntegriert))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "WarmwasserspeicherMitWaermepumpeIntegriert",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Soll künftig der Warmwasserspeicher (190l) in Wärmepumpe integriert sein?",
+                "originalIdentifier": "WarmwasserspeicherMitWaermepumpeIntegriert",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
+                "position": 17,
+                "isDisabled": false,
+                "sourceData": "N",
+                "fieldType": "Radio Group"
+            },
+            "Vorlauftemperatur": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Vorlauftemperatur",
+                "boxShadow": "none",
+                "isRequired": false,
+                "onTextChanged": "{{EligibilityChecker.checkTemperature(Form.formData.Vorlauftemperatur)}}",
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Vorlauftemperatur))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "Vorlauftemperatur",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "aktuelle Vorlauftemperatur (in Grad C)",
+                "originalIdentifier": "Vorlauftemperatur",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 11,
+                "isDisabled": false,
+                "sourceData": 25,
+                "fieldType": "Number Input"
+            },
+            "Heizkreise": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Heizkreise",
+                "boxShadow": "none",
+                "isRequired": false,
+                "onTextChanged": "{{EligibilityChecker.checkHeatingCircuits(Form.formData.Heizkreise)}}",
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Heizkreise))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "Heizkreise",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Anzahl separater Heizkreise",
+                "originalIdentifier": "Heizkreise",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 13,
+                "isDisabled": false,
+                "sourceData": 2,
+                "fieldType": "Number Input"
+            },
+            "Anrede": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Anrede",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Anrede))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Anrede",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Anrede\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Anrede",
+                "originalIdentifier": "Anrede",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 24,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "Baujahr": {
+                "boxShadow": "none",
+                "minDate": "1920-12-31T18:30:00.000Z",
+                "dateFormat": "YYYY",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.Baujahr, \"YYYY-MM-DD HH:mm\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accessor": "Baujahr",
+                "shortcuts": false,
+                "convertToISO": false,
+                "children": {},
+                "isDisabled": false,
+                "sourceData": "2024-02-22 14:31",
+                "labelTextSize": "0.875rem",
+                "identifier": "Baujahr",
+                "isRequired": false,
+                "isCustomField": false,
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"TODO\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Baujahr des Hauses",
+                "originalIdentifier": "Baujahr",
+                "timePrecision": "minute",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "closeOnSelection": false,
+                "maxDate": "2121-12-31T18:29:00.000Z",
+                "position": 2,
+                "fieldType": "Datepicker"
+            },
+            "JahresHeizenergiemengeN_2": {
+                "labelTextSize": "0.875rem",
+                "identifier": "JahresHeizenergiemengeN_2",
+                "boxShadow": "none",
+                "isRequired": true,
+                "isCustomField": false,
+                "defaultValue": "0",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "JahresHeizenergiemengeN_2",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Jahres Heizenergiemenge ({{new Date().getFullYear()-3}})",
+                "originalIdentifier": "JahresHeizenergiemengeN_2",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 10,
+                "isDisabled": false,
+                "sourceData": 15,
+                "fieldType": "Number Input"
+            },
+            "JahresHeizenergiemengeN_1": {
+                "labelTextSize": "0.875rem",
+                "identifier": "JahresHeizenergiemengeN_1",
+                "boxShadow": "none",
+                "isRequired": true,
+                "isCustomField": false,
+                "defaultValue": "0",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "number",
+                "accessor": "JahresHeizenergiemengeN_1",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Jahres Heizenergiemenge ({{new Date().getFullYear()-2}})",
+                "minNum": "0",
+                "originalIdentifier": "JahresHeizenergiemengeN_1",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 9,
+                "isDisabled": false,
+                "sourceData": 14,
+                "fieldType": "Number Input"
+            },
+            "Nachname": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Nachname",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Nachname))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Nachname",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Nachname\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Nachname",
+                "originalIdentifier": "Nachname",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 22,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "Telefonnummer": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Telefonnummer",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Telefonnummer))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Telefonnummer",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Telefonnummer\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Telefonnummer",
+                "originalIdentifier": "Telefonnummer",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 26,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            },
+            "Solarthermieanlage": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Solarthermieanlage",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Solarthermieanlage))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "Solarthermieanlage",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Einheiten\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Solarthermieanlage für Warmwasserbereitung vorhanden",
+                "originalIdentifier": "Solarthermieanlage",
+                "children": {},
+                "options": "[\n  {\n    \"label\": \"Ja\",\n    \"value\": \"J\"\n  },\n  {\n    \"label\": \"Nein\",\n    \"value\": \"N\"\n  }\n]",
+                "position": 19,
+                "isDisabled": false,
+                "sourceData": "J",
+                "fieldType": "Radio Group"
+            },
+            "Vorname": {
+                "labelTextSize": "0.875rem",
+                "identifier": "Vorname",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Vorname))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "dataType": "null",
+                "accessor": "Vorname",
+                "isVisible": "{{((sourceData, formData, fieldState) => (Select1.selectedOptionValue === \"Vorname\"))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "label": "Vorname",
+                "originalIdentifier": "Vorname",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(Form.sourceData, Form.formData, Form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 23,
+                "isDisabled": false,
+                "fieldType": "Text Input"
+            }
+        },
+        "position": -1,
+        "isDisabled": false,
+        "sourceData": {
+            "EnergieausweisVorhanden": "J",
+            "JahresHeizenergiemengeN": 12,
+            "Warmwasserbereitung": "separater E-Boiler",
+            "Immobilienart": "Ein-oder Mehrfamilienhaus",
+            "SanierungJahr": 2024,
+            "WarmwasserspeicherMitWaermepumpeIntegriert": "N",
+            "Vorlauftemperatur": 25,
+            "Heizungsart": "Gas",
+            "Heizkreise": 2,
+            "kontaktiertAm": 1708530385077,
+            "Heizanlage": "Sonstiges",
+            "Baujahr": "2024-02-22 14:31",
+            "JahresHeizenergiemengeN_2": 15,
+            "beantragtAm": 1708531506923,
+            "JahresHeizenergiemengeN_1": 14,
+            "WarmwasserspeicherWuenschgroesse": 300,
+            "WarmwsserspeicherKapazitaet": 12,
+            "BeheizteFlaeche": 25,
+            "Personen": 23,
+            "Solarthermieanlage": "J"
+        },
+        "cellBoxShadow": "none",
+        "fieldType": "Object"
+    }},
+    "mobileBottomRow": 219,
+    "widgetName": "Form",
+    "submitButtonStyles": {
+        "boxShadow": "none",
+        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+        "iconName": "saved",
+        "buttonVariant": "PRIMARY",
+        "iconAlign": "left"
+    },
+    "dynamicPropertyPathList": [],
+    "displayName": "JSON Form",
+    "bottomRow": 47,
+    "fieldLimitExceeded": false,
+    "parentRowSpace": 10,
+    "title": "Daten ändern",
+    "hideCard": false,
+    "mobileRightColumn": 25,
+    "parentColumnSpace": 19.09375,
+    "dynamicTriggerPathList": [
+        {"key": "schema.__root_schema__.children.Immobilienart.onOptionChange"},
+        {"key": "schema.__root_schema__.children.Vorlauftemperatur.onTextChanged"},
+        {"key": "schema.__root_schema__.children.Heizkreise.onTextChanged"},
+        {"key": "onSubmit"}
+    ],
+    "borderWidth": "1",
+    "sourceData": "{{{\n\"Nachname\":null,\n\"Vorname\":null,\n\"Anrede\":null,\n\"Telefonnummer\":null,\n\"Email\":null,\n\"Strasse\": null,\n\"Hausnummer\":null,\n\"PLZ\":null,\n\"Ort\":null,\n\t\n\"Baujahr\":null,\n\"SanierungJahr\":null,\n\"Heizanlage\":null,\n\"EnergieausweisVorhanden\":null,\n\"Heizungsart\":null,\n\"Immobilienart\":null,\n\"JahresHeizenergiemengeN\":null,\n\"JahresHeizenergiemengeN_1\":null,\n\"JahresHeizenergiemengeN_2\":null,\n\"Vorlauftemperatur\":null,\n\"BeheizteFlaeche\":null,\n\"Einheiten\": null,\n\"Heizkreise\":null,\n\"Warmwasserbereitung\":null,\n\"vorhandeneWarmwasserbereitungBleiben\":null,\t\n\"WarmwsserspeicherKapazitaet\":null,\n\"WarmwasserspeicherMitWaermepumpeIntegriert\":null,\n\"WarmwasserspeicherWuenschgroesse\":null,\n\"Solarthermieanlage\":null,\n\"EntscheidungGesendetAm\":null,\n\"anPartnerGesendetAm\":null,\n\"Personen\":null,\n}}}",
+    "resetButtonLabel": "Reset",
+    "key": "f1p5oaixd6",
+    "backgroundColor": "#fff",
+    "isDeprecated": false,
+    "rightColumn": 59,
+    "widgetId": "jvhfgriq6q",
+    "minWidth": 450,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "mobileTopRow": 178,
+    "scrollContents": true,
+    "responsiveBehavior": "fill",
+    "fixedFooter": true,
+    "originalTopRow": 26,
+    "mobileLeftColumn": 0,
+    "maxDynamicHeight": 9000,
+    "minDynamicHeight": 4
 }
